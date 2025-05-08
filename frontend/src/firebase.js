@@ -7,12 +7,12 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBATSgEl3k8O5n2Fn7R9-PbQKG_EuMnP_o",
-  authDomain: "xeno-crm-ae680.firebaseapp.com",
-  projectId: "xeno-crm-ae680",
-  storageBucket: "xeno-crm-ae680.firebasestorage.app",
-  messagingSenderId: "1028254529357",
-  appId: "1:1028254529357:web:84625a8ddd6d4cdd46a904"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
